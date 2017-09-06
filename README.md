@@ -96,7 +96,13 @@ plt.scatter(urban['Number of Rides'], urban['Average Fare'], s = urban['Number o
 plt.title('Pyber Ride Sharing Data')
 plt.xlabel('Number of Rides per City')
 plt.ylabel('Average Fare per City')
-plt.legend()
+
+
+
+lgnd = plt.legend(frameon = True, edgecolor = 'black')
+lgnd.legendHandles[0]._sizes = [75]
+lgnd.legendHandles[1]._sizes = [75]
+lgnd.legendHandles[2]._sizes = [75]
 
 plt.show()
 
