@@ -104,7 +104,7 @@ plt.show()
 ```
 
 
-![png](output_6_0.png)
+![png](Images/output_6_0.png)
 
 
 ## Total Fares by City Type
@@ -132,7 +132,7 @@ plt.show()
 ```
 
 
-![png](output_8_0.png)
+![png](Images/output_8_0.png)
 
 
 ## Total Rides by City Type
@@ -150,7 +150,7 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+![png](Images/output_10_0.png)
 
 
 ## Drivers by City Type
@@ -168,5 +168,5 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![png](Images/output_12_0.png)
 
