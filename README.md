@@ -87,13 +87,15 @@ urban = city_info[city_info['Type of City'] == 'Urban']
 #Color Dictionary 
 city_color = {'Urban': color_scheme['Gold'], 'Suburban': color_scheme['Light Sky Blue'], 'Rural': color_scheme['Light Coral']}
 
+plt.suptitle('Pyber Ride Sharing Data')
+
 # three scatter plots for each city type
 plt.scatter(rural['Number of Rides'], rural['Average Fare'], s = rural['Number of Drivers']*10, color = city_color['Rural'], edgecolor = 'black', label = 'Rural', alpha = .75)
 plt.scatter(suburban['Number of Rides'], suburban['Average Fare'], s = suburban['Number of Drivers']*10, color = city_color['Suburban'], edgecolor = 'black', label = 'Suburban', alpha = .75)
 plt.scatter(urban['Number of Rides'], urban['Average Fare'], s = urban['Number of Drivers']*10, color = city_color['Urban'], edgecolor = 'black', label = 'Urban', alpha = .75)
 
 #print scatter plot
-plt.title('Pyber Ride Sharing Data')
+plt.title('Note : Size of Bubble Corresponds to Number of Drivers per City')
 plt.xlabel('Number of Rides per City')
 plt.ylabel('Average Fare per City')
 
